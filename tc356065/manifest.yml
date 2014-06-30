@@ -8,6 +8,7 @@ Versions: [5.1]
 Cartridge-Version: 0.2.0
 License: GPL
 Vendor: Oracle
+Cartridge-Vendor: openshiftqe
 Categories:
   - service
   - database
