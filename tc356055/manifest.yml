@@ -49,9 +49,6 @@ Publishes:
     Type: ENV:NET_TCP:db:connection-info
   publish-ld-library-path-info:
     Type: ENV:NET_TCP:db:ld-library-path-info
-Scaling:
-  Min: 0
-  Max: 0
 Endpoints:
 - Private-IP-Name: DB_HOST
   Private-Port-Name: DB_PORT
