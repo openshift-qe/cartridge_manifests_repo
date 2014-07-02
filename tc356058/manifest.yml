@@ -46,6 +46,3 @@ Endpoints:
     Private-Port:      3306
     Public-Port-Name:  DB_PROXY_PORT
 Install-Build-Required: false
-Scaling:
-  Min: 0 
-  Max: 0  
