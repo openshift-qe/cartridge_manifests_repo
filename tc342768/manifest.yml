@@ -89,4 +89,4 @@ Endpoints:
         Backend:       ""
         Options:       { health: true }
 Install-Build-Required: false
-Source-Url: https://github.com/openshift-qe/compressed_cart_repo/blob/master/tc342768/perlv2_missing_manifest.zip
+Source-Url: https://github.com/openshift-qe/compressed_cart_repo/raw/master/tc342768/perlv2_missing_manifest.zip
