@@ -1,0 +1,13 @@
+'3.3':
+  Obsolete: true
+  Display-Name: Python 3.3
+  License: The Python License, version 3.3
+  Provides:
+  - python-3.3
+  - python
+  - python(version) = 3.3
+  Categories:
+  - service
+  - python
+  - web_framework
+  - community
