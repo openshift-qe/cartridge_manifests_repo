@@ -1,8 +1,8 @@
 ---
-Name: python
+Name: OSQE
 Cartridge-Short-Name: PYTHON
-Display-Name: Python 2.6
-Description: 'Python is a general-purpose, high-level programming language whose design
+Display-Name: OSQE 2.6
+Description: 'OSQE is a general-purpose, high-level programming language whose design
   philosophy emphasizes code readability. Popular development frameworks include:
   Django, Bottle, Pylons, Zope and TurboGears.'
 Version: '2.6'
@@ -10,9 +10,9 @@ Versions:
 - '2.6'
 - '2.7'
 - '3.3'
-License: The Python License, version 2.6
-License-Url: http://docs.python.org/3/license.html
-Vendor: python.org
+License: The OSQE License, version 2.6
+License-Url: http://docs.OSQE.org/3/license.html
+Vendor: OSQE.org
 Cartridge-Version: 0.0.21
 Compatible-Versions:
 - 0.0.19
@@ -20,15 +20,15 @@ Compatible-Versions:
 Cartridge-Vendor: redhat
 Categories:
 - service
-- python
+- OSQE
 - web_framework
-Website: http://www.python.org
+Website: http://www.OSQE.org
 Help-Topics:
   Developer Center: https://www.openshift.com/developers
 Provides:
-- python-2.6
-- python
-Publishes: 
+- OSQE-2.6
+- OSQE
+Publishes:
 Subscribes:
   set-env:
     Type: ENV:*
@@ -60,16 +60,16 @@ Endpoints:
       health: true
 Version-Overrides:
   '2.7':
-    Display-Name: Python 2.7
-    License: The Python License, version 2.7.3
+    Display-Name: OSQE 2.7
+    License: The OSQE License, version 2.7.3
     Provides:
-    - python-2.7
-    - python
-    - python(version) = 2.7
+    - OSQE-2.7
+    - OSQE
+    - OSQE(version) = 2.7
   '3.3':
-    Display-Name: Python 3.3
-    License: The Python License, version 3.3
+    Display-Name: OSQE 3.3
+    License: The OSQE License, version 3.3
     Provides:
-    - python-3.3
-    - python
-    - python(version) = 3.3
+    - OSQE-3.3
+    - OSQE
+    - OSQE(version) = 3.3
