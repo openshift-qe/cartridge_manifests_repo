@@ -1,0 +1,61 @@
+---
+Name: python
+Cartridge-Short-Name: PYTHON
+Display-Name: Python 2.7
+Description: 'Python is a general-purpose, high-level programming language whose design
+  philosophy emphasizes code readability. Popular development frameworks include:
+  Django, Bottle, Pylons, Zope and TurboGears.'
+Version: '2.7'
+Source-Url: file:///usr/libexec/openshift/cartridges/python/
+License: The Python License, version 2.7
+License-Url: http://docs.python.org/3/license.html
+Vendor: python.org
+Cartridge-Version: 0.0.18
+Compatible-Versions:
+- 0.0.16
+- 0.0.17
+Cartridge-Vendor: bmeng
+Categories:
+- service
+- python
+- web_framework
+#- external
+Website: http://www.python.org
+Help-Topics:
+  Developer Center: https://www.openshift.com/developers
+Provides:
+- python-2.7
+- python
+Publishes: 
+Subscribes:
+  set-env:
+    Type: ENV:*
+    Required: false
+  set-doc-url:
+    Type: STRING:urlpath
+    Required: false
+Scaling:
+  Min: 1
+  Max: -1
+Endpoints:
+- Private-IP-Name: IP
+  Private-Port-Name: PORT
+  Private-Port: 8080
+  Public-Port-Name: PROXY_PORT
+  Protocols:
+  - http
+  - ws
+  Options:
+    primary: true
+  Mappings:
+  - Frontend: ''
+    Backend: ''
+    Options:
+      websocket: true
+  - Frontend: "/health"
+    Backend: ''
+    Options:
+      health: true
+- Private-IP-Name: HTTP_IP
+  Private-Port-Name: HTTP_PORT
+  Private-Port: 23323
