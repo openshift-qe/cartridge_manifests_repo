@@ -6,7 +6,7 @@ Version: '6.10'
 License: "GPL v2"
 License-Url: http://dev.perl.org/licenses/
 Vendor: perl.org
-Cartridge-Version: 0.0.1
+Cartridge-Version: a0.0.1
 Cartridge-Vendor: wsuntest
 Categories:
   - service
@@ -70,8 +70,8 @@ Subscribes:
     Type: "STRING:urlpath"
     Required : false
 Scaling:
-  Min: 0 
-  Max: 0 
+  Min: 0
+  Max: 0
 Group-Overrides:
   - components:
     - perl-5.10
