@@ -11,7 +11,6 @@ Cartridge-Vendor: wsuntest
 Categories:
   - service
   - perl
-  - web_framework
   - external
 Website: http://www.perl.org
 Help-Topics:
