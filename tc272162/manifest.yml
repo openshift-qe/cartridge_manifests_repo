@@ -74,4 +74,4 @@ Version-Overrides:
     - ruby-2.0
     - ruby
     - ruby(version) = 2.0
-Source-Url: git@github.com:openshift-qe/openshift-origin-ruby-cartridge.git
+Source-Url: git://github.com:openshift-qe/openshift-origin-ruby-cartridge.git
