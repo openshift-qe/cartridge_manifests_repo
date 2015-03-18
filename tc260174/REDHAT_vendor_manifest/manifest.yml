@@ -1,33 +1,30 @@
 ---
-Name: osqe
-Cartridge-Short-Name: PYTHON
-Display-Name: osqe 2.6
-Description: 'osqe is a general-purpose, high-level programming language whose design
-  philosophy emphasizes code readability. Popular development frameworks include:
-  Django, Bottle, Pylons, Zope and TurboGears.'
-Version: '2.6'
+Name: ruby
+Cartridge-Short-Name: RUBY
+Display-Name: Ruby 1.9
+Description: Ruby is a dynamic, reflective, general-purpose object-oriented programming
+  language. Popular development frameworks include Ruby on Rails and Sinatra.
+Version: '1.9'
 Versions:
-- '2.6'
-- '2.7'
-- '3.3'
-License: The osqe License, version 2.6
-License-Url: http://docs.osqe.org/3/license.html
-Vendor: osqe.org
-Cartridge-Version: 0.0.21
+- '2.0'
+- '1.9'
+- '1.8'
+License: Ruby BSDL
+License-Url: http://www.ruby-lang.org/en/about/license.txt
+Vendor: ruby.org
+Cartridge-Version: 0.0.23
 Compatible-Versions:
-- 0.0.19
 - 0.0.20
+- 0.0.21
+- 0.0.22
 Cartridge-Vendor: REDHAT
 Categories:
 - service
-- osqe
+- ruby
 - web_framework
-Website: http://www.osqe.org
+Website: http://www.ruby-lang.org
 Help-Topics:
   Developer Center: https://www.openshift.com/developers
-Provides:
-- osqe-2.6
-- osqe
 Publishes:
 Subscribes:
   set-env:
@@ -39,6 +36,10 @@ Subscribes:
 Scaling:
   Min: 1
   Max: -1
+Provides:
+- ruby-2.0
+- ruby-1.9
+- ruby
 Endpoints:
 - Private-IP-Name: IP
   Private-Port-Name: PORT
@@ -58,18 +59,19 @@ Endpoints:
     Backend: ''
     Options:
       health: true
+Additional-Control-Actions:
+- threaddump
 Version-Overrides:
-  '2.7':
-    Display-Name: osqe 2.7
-    License: The osqe License, version 2.7.3
+  '1.8':
+    Display-Name: Ruby 1.8
     Provides:
-    - osqe-2.7
-    - osqe
-    - osqe(version) = 2.7
-  '3.3':
-    Display-Name: osqe 3.3
-    License: The osqe License, version 3.3
+    - ruby-1.8
+    - ruby
+    - ruby(version) = 1.8
+  '2.0':
+    Display-Name: Ruby 2.0
     Provides:
-    - osqe-3.3
-    - osqe
-    - osqe(version) = 3.3
+    - ruby-2.0
+    - ruby
+    - ruby(version) = 2.0
+Source-Url: https://github.com/openshift-qe/openshift-origin-ruby-cartridge.git
