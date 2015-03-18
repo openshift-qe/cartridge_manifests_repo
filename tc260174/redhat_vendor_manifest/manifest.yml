@@ -1,0 +1,75 @@
+---
+Name: osqe
+Cartridge-Short-Name: PYTHON
+Display-Name: osqe 2.6
+Description: 'osqe is a general-purpose, high-level programming language whose design
+  philosophy emphasizes code readability. Popular development frameworks include:
+  Django, Bottle, Pylons, Zope and TurboGears.'
+Version: '2.6'
+Versions:
+- '2.6'
+- '2.7'
+- '3.3'
+License: The osqe License, version 2.6
+License-Url: http://docs.osqe.org/3/license.html
+Vendor: osqe.org
+Cartridge-Version: 0.0.21
+Compatible-Versions:
+- 0.0.19
+- 0.0.20
+Cartridge-Vendor: redhat
+Categories:
+- service
+- osqe
+- web_framework
+Website: http://www.osqe.org
+Help-Topics:
+  Developer Center: https://www.openshift.com/developers
+Provides:
+- osqe-2.6
+- osqe
+Publishes:
+Subscribes:
+  set-env:
+    Type: ENV:*
+    Required: false
+  set-doc-url:
+    Type: STRING:urlpath
+    Required: false
+Scaling:
+  Min: 1
+  Max: -1
+Endpoints:
+- Private-IP-Name: IP
+  Private-Port-Name: PORT
+  Private-Port: 8080
+  Public-Port-Name: PROXY_PORT
+  Protocols:
+  - http
+  - ws
+  Options:
+    primary: true
+  Mappings:
+  - Frontend: ''
+    Backend: ''
+    Options:
+      websocket: true
+  - Frontend: /health
+    Backend: ''
+    Options:
+      health: true
+Version-Overrides:
+  '2.7':
+    Display-Name: osqe 2.7
+    License: The osqe License, version 2.7.3
+    Provides:
+    - osqe-2.7
+    - osqe
+    - osqe(version) = 2.7
+  '3.3':
+    Display-Name: osqe 3.3
+    License: The osqe License, version 3.3
+    Provides:
+    - osqe-3.3
+    - osqe
+    - osqe(version) = 3.3
